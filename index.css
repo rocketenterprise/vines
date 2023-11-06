@@ -1,66 +1,75 @@
+/* Colors */
 :root {
-    --primary-color: #02b7dd;
-    --secondary-color: #443a84;
+    --teal: #0bd3d3;
+    --pink: #f890e7;
     --white: #ffffff;
-    --accent-color: #e97db1;
+    --gray: #d0d0d0;
     --black: #000000;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
+/* Container Styles */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Rest of your styling for content layout, cards, etc. */
-
-/* Styles for Navbar */
-.navbar {
-    background-color: var(--primary-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Navbar Styles */
+.wrapper {
+    background-color: var(--teal);
     padding: 10px;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .logo-container img {
-    max-width: 100px;
+    width: 150px;
+}
+
+.menu-container {
+    display: flex;
 }
 
 .menu-toggle {
     display: none;
     cursor: pointer;
     font-size: 24px;
-    color: var(--white);
+    margin-right: 10px;
 }
 
-.menu-container nav ul {
+.nav-menu {
     list-style: none;
     display: flex;
-    gap: 20px;
 }
 
-.menu-container nav ul li a {
+.nav-menu li {
+    margin-right: 20px;
+}
+
+.nav-menu li a {
     text-decoration: none;
     color: var(--white);
 }
 
-.menu-container nav ul li a.active {
+.nav-menu li a.active {
     font-weight: bold;
 }
 
-.user-container a {
-    text-decoration: none;
-    color: var(--white);
+.dropdown {
+    position: relative;
 }
 
-/* Dropdown styles */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: var(--primary-color);
+    background-color: var(--teal);
     min-width: 160px;
     z-index: 1;
+    border-radius: 5px;
 }
 
 .dropdown-content a {
@@ -74,14 +83,25 @@ body {
     display: block;
 }
 
-/* Header Styles */
-h2 {
-    color: var(--secondary-color);
-    font-size: 24px;
-    text-align: center;
+.user-container a {
+    color: var(--white);
+    margin-left: 15px;
+    text-decoration: none;
 }
 
-/* Card Styles */
+/* Header Styles */
+header {
+    background-color: var(--pink);
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: var(--white);
+    font-size: 32px;
+}
+
+/* Cards Styles (for hotels) */
 .cards-container {
     display: flex;
     flex-wrap: wrap;
@@ -97,7 +117,7 @@ h2 {
 .scroll-arrow a {
     text-decoration: none;
     font-size: 36px;
-    color: var(--primary-color);
+    color: var(--teal);
 }
 
 /* Footer Styles */
@@ -112,9 +132,9 @@ footer section {
     margin-right: 20px;
 }
 
-footer h3 {
-    color: var(--primary-color);
-    font-size: 18px;
+footer h2 {
+    color: var(--teal);
+    font-size: 24px;
 }
 
 footer ul {
@@ -129,5 +149,29 @@ footer li {
 footer a {
     text-decoration: none;
     color: var(--black);
-    font-size: 16px;
+    font-size: 18px;
 }
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: var(--teal);
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .nav-menu li {
+        margin: 10px 20px;
+    }
+}
+
+/* Additional Styling and Adjustments Are Required */
