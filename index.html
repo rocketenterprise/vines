@@ -10,22 +10,22 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="#">Vines</a>
+                <a href="#">HotelFinder</a>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li>
-                    <a href="#deals">Deals</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#flights">Flights</a></li>
-                        <li><a href="#hotels">Hotels</a></li>
-                    </ul>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#hotels">Hotels</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">More <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#flights">Flights</a>
+                        <a href="#cars">Car Rentals</a>
         </nav>
     </header>
-    <sectio class="main">
-        <div class="search_container">
-            <h1 class="header">Find the Perfect Hotel</h1>
-            <form class="form form_container">
+    <main>
+        <div class="search-container">
+            <h1>Find the Perfect Hotel</h1>
+            <form>
                 <input type="text" id="location" placeholder="Destination">
                 <input type="date" id="check-in" placeholder="Check-in">
                 <input type="date" id="check-out" placeholder="Check-out">

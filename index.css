@@ -14,7 +14,7 @@ body {
 /* Header styles */
 header {
     background-color: rgb(247, 247, 247);
-    color: darkgrey;
+    color: #fff;
     padding: 10px 0;
 }
 
@@ -63,7 +63,7 @@ nav-menu {
 
 
 /* Main content styles */
-.main {
+main {
     background: url('images/dda3d967-84d3-4533-b7f7-f1c5fb514326-large16x9_Flamingo.jpg') center/cover no-repeat;
     max-width: 1200px;
     margin: 20px auto;
@@ -73,30 +73,30 @@ nav-menu {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.search_container {
+.search-container {
     text-align: center;
 }
 
-.search_container h1 {
+.search-container h1 {
     font-size: 36px;
     margin-bottom: 20px;
 }
 
-.main .form.form_container{
+form {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.main .form.form_container input,
-.main .form.form_container button {
+form input,
+form button {
     margin: 5px;
     padding: 10px;
     border: none;
     border-radius: 5px;
 }
 
-.main .form.form_container button {
+form button {
     background-color: #008CBA;
     color: #fff;
     cursor: pointer;
