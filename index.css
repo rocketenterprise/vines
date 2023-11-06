@@ -10,6 +10,11 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
 }
+.page__inner {
+    margin-right: auto;
+    margin-left: auto;
+    width: 960px;
+}
 
 /* Header styles */
 header {
