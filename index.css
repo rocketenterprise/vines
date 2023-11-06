@@ -1,77 +1,133 @@
 :root {
-    --primary-color: #443a84;
-    --secondary-color: #000000;
-   
+    --primary-color: #02b7dd;
+    --secondary-color: #443a84;
+    --white: #ffffff;
+    --accent-color: #e97db1;
+    --black: #000000;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: var(--light-blue);
-    color: var(--white);
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-header {
-    background-color: var(--pink);
-    text-align: center;
-    padding: 15px 0;
+/* Rest of your styling for content layout, cards, etc. */
+
+/* Styles for Navbar */
+.navbar {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
-h1 {
-    font-size: 28px;
+.logo-container img {
+    max-width: 100px;
 }
 
-main {
-    padding: 20px;
-}
-
-.search-section, .results-section {
-    background-color: var(--teal);
-    border-radius: 5px;
-    padding: 15px;
-    margin-bottom: 20px;
-}
-
-h2 {
+.menu-toggle {
+    display: none;
+    cursor: pointer;
     font-size: 24px;
     color: var(--white);
 }
 
-.search-form {
+.menu-container nav ul {
+    list-style: none;
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 10px;
+    gap: 20px;
 }
 
-input {
-    width: 24%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-#search-button {
-    width: 24%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: var(--pink);
+.menu-container nav ul li a {
+    text-decoration: none;
     color: var(--white);
 }
 
-#search-button:hover {
-    background-color: var(--light-purple);
+.menu-container nav ul li a.active {
+    font-weight: bold;
 }
 
-.hotel-results {
-    /* Style your hotel results */
+.user-container a {
+    text-decoration: none;
+    color: var(--white);
 }
 
-footer {
+/* Dropdown styles */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--primary-color);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: var(--white);
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Header Styles */
+h2 {
+    color: var(--secondary-color);
+    font-size: 24px;
     text-align: center;
-    background-color: var(--pink);
-    padding: 10px;
+}
+
+/* Card Styles */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Scroll Arrow Styles */
+.scroll-arrow {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.scroll-arrow a {
+    text-decoration: none;
+    font-size: 36px;
+    color: var(--primary-color);
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+footer section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+footer h3 {
+    color: var(--primary-color);
+    font-size: 18px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    margin: 10px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 16px;
 }
