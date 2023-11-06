@@ -7,48 +7,37 @@
 </head>
 <body>
     <div class="container">
-        <div class="wrapper">
-            <div class="navbar">
-                <div class="logo-container">
-                    <img src="logo.png" alt="Hotel Compare Logo">
-                </div>
-                <div class="menu-container">
-                    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
-                    <nav>
-                        <ul class="nav-menu">
-                            <li><a href="#home" class="active">Home</a></li>
-                            <li>
-                                <a href="#hotels">Hotels</a>
-                            </li>
-                            <li>
+        <div class="navbar">
+            <div class="logo-container">
+                <img src="logo.png" alt="Hotel Compare Logo">
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+            <div class="menu-container">
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#hotels">Hotels</a></li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">More <i class="fa fa-caret-down"></i></a>
+                            <div class="dropdown-content">
                                 <a href="#flights">Flights</a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="javascript:void(0)" class="dropbtn">More <i class="fa fa-caret-down"></i></a>
-                                <div class="dropdown-content">
-                                    <a href="#cars">Car Rentals</a>
-                                    <a href="#activities">Activities</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="user-container">
-                    <a href="#login">
-                        <i class="fa fa-google"></i> Sign in with Google
-                    </a>
-                    <a href="#login">
-                        <i class="fa fa-yahoo"></i> Sign in with Yahoo
-                    </a>
-                </div>
+                                <a href="#cars">Car Rentals</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="user-container">
+                <a href="#login">Login</a>
+                <a href="#signup">Sign Up</a>
             </div>
         </div>
     </div>
     
     <div class="container">
-        <header>
-            <h1>Welcome to Hotel Compare</h1>
-        </header>
+        <section>
+            <h2>Hotel Compare</h2>
+        </section>
         
         <div class="cards-container">
             <!-- Hotel cards go here -->
@@ -62,7 +51,7 @@
     <div class="container">
         <footer>
             <section>
-                <h2>Legal</h2>
+                <h3>Legal</h3>
                 <ul>
                     <li><a href="#terms">Terms & Conditions</a></li>
                     <li><a href="#privacy">Privacy Policy</a></li>
@@ -70,7 +59,7 @@
                 </ul>
             </section>
             <section>
-                <h2>Support</h2>
+                <h3>Support</h3>
                 <ul>
                     <li><a href="#contact">Contact Us</a></li>
                     <li><a href="#faq">FAQ</a></li>
@@ -82,5 +71,4 @@
     <script src="index.js"></script>
 </body>
 </html>
-
 
