@@ -1,58 +1,49 @@
+/* Colors */
 :root {
-    --main-color: #0bd3d3;
-    --secondary-color: #f890e7;
-    --text-color: #000000;
-    --bg-color: #ffffff;
-    --border-color: #d0d0d0;
+    --teal: #0bd3d3;
+    --pink: #f890e7;
+    --white: #ffffff;
+    --gray: #d0d0d0;
+    --black: #000000;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    margin: 0;
-    padding: 0;
-}
-
+/* Container Styles */
 .container {
     width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar Styles */
+.wrapper {
+    background-color: var(--teal);
+    padding: 10px;
 }
 
 .navbar {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    background-color: var(--main-color);
-    padding: 10px 0;
-}
-
-.logo-container {
-    flex: 1;
-    text-align: left;
 }
 
 .logo-container img {
     width: 150px;
 }
 
-.menu-container, .user-container {
+.menu-container {
     display: flex;
-    align-items: center;
 }
 
 .menu-toggle {
     display: none;
-    width: 30px;
-    height: 30px;
-    background-color: var(--secondary-color);
     cursor: pointer;
+    font-size: 24px;
+    margin-right: 10px;
 }
 
 .nav-menu {
     list-style: none;
     display: flex;
-    margin: 0;
 }
 
 .nav-menu li {
@@ -61,14 +52,13 @@ body {
 
 .nav-menu li a {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--white);
 }
 
 .nav-menu li a.active {
     font-weight: bold;
 }
 
-/* Dropdown menu */
 .dropdown {
     position: relative;
 }
@@ -76,13 +66,14 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: var(--main-color);
+    background-color: var(--teal);
     min-width: 160px;
     z-index: 1;
+    border-radius: 5px;
 }
 
 .dropdown-content a {
-    color: var(--text-color);
+    color: var(--white);
     padding: 12px 16px;
     display: block;
     text-decoration: none;
@@ -93,48 +84,94 @@ body {
 }
 
 .user-container a {
-    color: var(--text-color);
+    color: var(--white);
     margin-left: 15px;
     text-decoration: none;
 }
 
-.menu-toggle {
-    display: block;
-}
-
-.header-section {
+/* Header Styles */
+header {
+    background-color: var(--pink);
     text-align: center;
+    padding: 20px;
 }
 
+header h1 {
+    color: var(--white);
+    font-size: 32px;
+}
+
+/* Cards Styles (for hotels) */
 .cards-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* Define styles for cards here */
 }
 
+/* Scroll Arrow Styles */
 .scroll-arrow {
-    /* Style the scroll arrow */
+    text-align: center;
+    margin: 20px 0;
 }
 
+.scroll-arrow a {
+    text-decoration: none;
+    font-size: 36px;
+    color: var(--teal);
+}
+
+/* Footer Styles */
 footer {
     display: flex;
     justify-content: space-between;
-    background-color: var(--main-color);
-    padding: 10px;
+    padding: 20px 0;
 }
 
-.footer-section {
+footer section {
     flex: 1;
-    text-align: center;
+    margin-right: 20px;
 }
 
-ul {
+footer h2 {
+    color: var(--teal);
+    font-size: 24px;
+}
+
+footer ul {
     list-style: none;
     padding: 0;
 }
 
-ul li a {
-    text-decoration: none;
-    color: var(--text-color);
+footer li {
+    margin: 10px 0;
 }
+
+footer a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 18px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: var(--teal);
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .nav-menu li {
+        margin: 10px 20px;
+    }
+}
+
+/* Additional Styling and Adjustments Are Required */

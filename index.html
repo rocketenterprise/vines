@@ -1,64 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="index.css">
     <title>Hotel Compare</title>
 </head>
 <body>
     <div class="container">
-        <div class="navbar">
-            <div class="logo-container">
-                <img src="logo.png" alt="Hotel Compare Logo">
+        <div class="wrapper">
+            <div class="navbar">
+                <div class="logo-container">
+                    <img src="logo.png" alt="Hotel Compare Logo">
+                </div>
+                <div class="menu-container">
+                    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+                    <nav>
+                        <ul class="nav-menu">
+                            <li><a href="#home" class="active">Home</a></li>
+                            <li>
+                                <a href="#hotels">Hotels</a>
+                            </li>
+                            <li>
+                                <a href="#flights">Flights</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="javascript:void(0)" class="dropbtn">More <i class="fa fa-caret-down"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="#cars">Car Rentals</a>
+                                    <a href="#activities">Activities</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="user-container">
+                    <a href="#login">
+                        <i class="fa fa-google"></i> Sign in with Google
+                    </a>
+                    <a href="#login">
+                        <i class="fa fa-yahoo"></i> Sign in with Yahoo
+                    </a>
+                </div>
             </div>
-            <div class="menu-container">
-                <div class="menu-toggle" onclick="toggleMenu()"></div>
-                <nav class="nav-menu">
-                    <a href="#" class="active">Home</a>
-                    <a href="#">Hotels</a>
-                    <a href="#">Flights</a>
-                    <div class="dropdown">
-                        <a href="javascript:void(0)" class="dropbtn">More</a>
-                        <div class="dropdown-content">
-                            <a href="#">Cars</a>
-                            <a href="#">Activities</a>
-                            <!-- Add more dropdown items -->
-                        </div>
-                    </div>
-                </nav>
-            </div>
-            <div class="user-container">
-                <div class="icon" id="google-icon"></div>
-                <div class="icon" id="yahoo-icon"></div>
-            </div>
-        </div>
-
-        <div class="content-container">
-            <header>
-                <h1>Find the Best Hotel Rates</h1>
-            </header>
-
-            <div class="cards-container">
-                <!-- Cards with hotel information -->
-                <!-- Add your card elements here -->
-            </div>
-
-            <div class="scroll-arrow">
-                <div class="arrow"></div>
-            </div>
-        </div>
-
-        <div class="footer-container">
-            <section class="footer-section">
-                <h2>Terms & Conditions</h2>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Cookie Policy</a>
-                <!-- Add more footer links -->
-            </section>
         </div>
     </div>
     
+    <div class="container">
+        <header>
+            <h1>Welcome to Hotel Compare</h1>
+        </header>
+        
+        <div class="cards-container">
+            <!-- Hotel cards go here -->
+        </div>
+        
+        <div class="scroll-arrow">
+            <a href="#scroll-down">&#9660;</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <footer>
+            <section>
+                <h2>Legal</h2>
+                <ul>
+                    <li><a href="#terms">Terms & Conditions</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#cookie">Cookie Policy</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Support</h2>
+                <ul>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </section>
+        </footer>
+    </div>
+
     <script src="index.js"></script>
 </body>
 </html>
