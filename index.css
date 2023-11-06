@@ -1,4 +1,4 @@
-* Reset some default styles */
+/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
@@ -8,14 +8,13 @@
 /* Basic styling for the entire page */
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #000;
+    background-color: #f7f7f7;
 }
 
 /* Header styles */
 header {
-    background-color: #02b7dd;
-    color: #ffffff;
+    background-color: #008CBA;
+    color: #fff;
     padding: 10px 0;
 }
 
@@ -45,14 +44,14 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: #ffffff;
+    color: #fff;
 }
 
 /* Main content styles */
 main {
     max-width: 1200px;
     margin: 20px auto;
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -62,7 +61,7 @@ main {
     text-align: center;
 }
 
-search-container h1 {
+.search-container h1 {
     font-size: 36px;
     margin-bottom: 20px;
 }
@@ -82,7 +81,7 @@ form button {
 }
 
 form button {
-    background-color: #02b7dd;
+    background-color: #008CBA;
     color: #fff;
     cursor: pointer;
 }
@@ -90,7 +89,7 @@ form button {
 /* Footer styles */
 footer {
     text-align: center;
-    background-color: #02b7dd;
+    background-color: #008CBA;
     color: #fff;
     padding: 10px 0;
 }
