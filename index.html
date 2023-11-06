@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
     <title>Hotel Search</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">
-                <a href="#">HotelFinder</a>
-            </div>
-            <ul class="nav-links">
+            <div class="logo">Hotel Finder</div>
+            <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Search</a></li>
                 <li><a href="#">About</a></li>
@@ -20,23 +18,28 @@
             </ul>
         </nav>
     </header>
-    
+
     <main>
-        <div class="search-container">
-            <h1>Find the Perfect Hotel</h1>
-            <form>
-                <input type="text" id="location" placeholder="Destination">
+        <section id="search-section">
+            <div class="search-bar">
+                <input type="text" id="location-input" placeholder="Enter a location">
                 <input type="date" id="check-in" placeholder="Check-in">
                 <input type="date" id="check-out" placeholder="Check-out">
-                <input type="number" id="guests" placeholder="Guests">
-                <button type="submit">Search</button>
-            </form>
-        </div>
+                <button id="search-button">Search</button>
+            </div>
+        </section>
+
+        <section id="results-section">
+            <!-- Hotel search results will be displayed here -->
+        </section>
     </main>
-    
+
     <footer>
-        <p>&copy; 2023 HotelFinder. All rights reserved.</p>
+        <p>&copy; 2023 Hotel Finder. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
 
