@@ -13,8 +13,8 @@ body {
 
 /* Header styles */
 header {
-    background-color: #f7f7f7;
-    color: #fff;
+    background-color: rgb(247, 247, 247);
+    color: darkgrey;
     padding: 10px 0;
 }
 
