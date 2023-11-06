@@ -1,5 +1,5 @@
 /* Reset default styles */
-body, h1, h2, p {
+body, ul {
     margin: 0;
     padding: 0;
 }
@@ -8,46 +8,40 @@ body {
     font-family: Arial, sans-serif;
     background-color: #7E8AA2; /* Light Blue background */
     color: #FFFFFF; /* White text */
-    margin: 0;
-    padding: 0;
 }
 
 header {
     background-color: #4AC4C2; /* Teal header background */
-    position: fixed;
-    width: 100%;
-    z-index: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px; /* Adjust size as needed */
 }
 
 nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-}
-
-.logo img {
-    width: 120px;
 }
 
 .nav-menu {
     list-style: none;
     display: flex;
-    align-items: center;
 }
 
 .nav-menu li {
+    position: relative;
     margin-right: 20px;
 }
 
-.nav-menu li:last-child {
-    margin-right: 0;
-}
-
-.nav-menu a {
+.nav-menu li a {
     text-decoration: none;
-    color: #FFFFFF;
-    font-weight: bold;
+    color: #FFFFFF; /* White menu text */
+    padding: 10px;
+    display: block;
 }
 
 .dropdown-menu {
@@ -55,57 +49,45 @@ nav {
     position: absolute;
     background-color: #4AC4C2; /* Teal dropdown background */
     border-radius: 5px;
-    margin-top: 5px;
 }
 
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-.nav-toggle {
-    display: none;
-    cursor: pointer;
-    font-size: 24px;
-}
-
-.search-section {
-    padding: 100px 20px;
-    text-align: center;
-}
-
-.search-bar input {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.search-bar button {
-    background-color: #FF6B6B; /* Pink button background */
-    color: #FFFFFF; /* White button text */
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.search-bar button:hover {
-    background-color: #A8A7B4; /* Light Purple hover effect */
-}
-
-.deals-section {
-    background-color: #FF6B6B; /* Pink deals section background */
+.dropdown-menu li {
     margin: 10px;
-    padding: 20px;
-    border-radius: 10px;
 }
 
 footer {
     text-align: center;
     background-color: #4AC4C2; /* Teal footer background */
     padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+}
+
+/* Mobile menu styles */
+.menu-toggle {
+    display: none;
+    width: 30px;
+    height: 30px;
+    background-color: #FF6B6B; /* Pink menu toggle button */
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #4AC4C2; /* Teal mobile menu background */
+        padding: 20px 0;
+        border-bottom: 1px solid #FFFFFF; /* White border */
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
 }

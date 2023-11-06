@@ -1,8 +1,11 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const navToggle = document.querySelector('.nav-toggle');
-    const navMenu = document.querySelector('.nav-menu');
+$(document).ready(function() {
+    $('.menu-toggle').click(function() {
+        $('.nav-menu').slideToggle(300);
+    });
 
-    navToggle.addEventListener('click', function () {
-        navMenu.classList.toggle('active');
+    $(window).resize(function() {
+        if ($(window).width() > 768) {
+            $('.nav-menu').removeAttr('style');
+        }
     });
 });
