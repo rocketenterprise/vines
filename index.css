@@ -1,35 +1,63 @@
-/* Reset some default styles */
-body, h1, h2, p {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: Arial, sans-serif;
     background-color: #7E8AA2; /* Light Blue background */
     color: #FFFFFF; /* White text */
+    margin: 0;
+    padding: 0;
 }
 
 header {
     background-color: #4AC4C2; /* Teal header background */
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 28px;
 }
 
-.booking-section {
-    background-color: #A8A7B4; /* Light Purple section background */
-    margin: 10px;
+.search-section {
+    background-color: #A8A7B4; /* Light Purple search section background */
     padding: 20px;
     border-radius: 10px;
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 24px;
     color: #FF6B6B; /* Pink section title */
+    text-align: center;
+}
+
+.search-bar {
+    text-align: center;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.search-bar button {
+    background-color: #FF6B6B; /* Pink button background */
+    color: #FFFFFF; /* White button text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #A8A7B4; /* Light Purple hover effect */
+}
+
+.deals-section {
+    background-color: #FF6B6B; /* Pink deals section background */
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 footer {
