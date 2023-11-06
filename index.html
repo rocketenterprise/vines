@@ -7,7 +7,26 @@
 </head>
 <body>
     <header>
-        <h1>Miami Travel Deals</h1>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Miami Travel Deals">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Deals</a></li>
+                <li class="dropdown">
+                    <a href="#">Destinations</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Miami</a></li>
+                        <li><a href="#">Orlando</a></li>
+                        <li><a href="#">Key West</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">&#9776;</div>
+        </nav>
     </header>
 
     <section id="search" class="search-section">
@@ -26,6 +45,7 @@
     <footer>
         <p>&copy; 2023 Miami Travel Deals</p>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>
-
