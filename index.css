@@ -7,127 +7,94 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Rest of your styling for content layout, cards, etc. */
-
-/* Styles for Navbar */
-.navbar {
+/* Header and Navbar Styles */
+header {
     background-color: var(--primary-color);
+}
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
 }
 
-.logo-container img {
-    max-width: 100px;
+.logo img {
+    max-width: 150px;
 }
 
-.menu-toggle {
-    display: none;
-    cursor: pointer;
-    font-size: 24px;
-    color: var(--white);
-}
-
-.menu-container nav ul {
+.menu ul {
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
-.menu-container nav ul li a {
+.menu ul li a {
     text-decoration: none;
     color: var(--white);
-}
-
-.menu-container nav ul li a.active {
     font-weight: bold;
+    font-size: 16px;
 }
 
-.user-container a {
-    text-decoration: none;
+/* Search Section Styles */
+.search-section {
+    background-color: var(--secondary-color);
     color: var(--white);
+    padding: 20px;
+    text-align: center;
 }
 
-/* Dropdown styles */
-.dropdown-content {
-    display: none;
-    position: absolute;
+.search-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.search-form input[type="text"],
+.search-form input[type="date"],
+.search-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--accent-color);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.search-form button:hover {
     background-color: var(--primary-color);
-    min-width: 160px;
-    z-index: 1;
 }
 
-.dropdown-content a {
-    color: var(--white);
-    padding: 12px 16px;
-    display: block;
-    text-decoration: none;
+/* Results Section Styles */
+.results-section {
+    padding: 20px;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Header Styles */
-h2 {
-    color: var(--secondary-color);
-    font-size: 24px;
-    text-align: center;
-}
-
-/* Card Styles */
-.cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-/* Scroll Arrow Styles */
-.scroll-arrow {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.scroll-arrow a {
-    text-decoration: none;
-    font-size: 36px;
-    color: var(--primary-color);
+.hotel-results {
+    /* Style hotel results and comparisons */
 }
 
 /* Footer Styles */
 footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 10px;
+    color: var(--white);
 }
 
-footer section {
-    flex: 1;
-    margin-right: 20px;
-}
-
-footer h3 {
-    color: var(--primary-color);
-    font-size: 18px;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-footer li {
-    margin: 10px 0;
-}
-
-footer a {
-    text-decoration: none;
-    color: var(--black);
-    font-size: 16px;
+.footer-content p {
+    margin: 0;
 }
