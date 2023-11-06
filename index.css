@@ -43,21 +43,20 @@ h2 {
 
 .search-form {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    gap: 10px;
     margin-bottom: 10px;
 }
 
 input {
-    width: 48%;
+    width: 24%;
     padding: 10px;
     border: none;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
-button {
-    width: 100%;
+#search-button {
+    width: 24%;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -66,12 +65,12 @@ button {
     color: var(--white);
 }
 
-button:hover {
+#search-button:hover {
     background-color: var(--light-purple);
 }
 
-.comparison-results {
-    /* Style your comparison results */
+.hotel-results {
+    /* Style your hotel results */
 }
 
 footer {
