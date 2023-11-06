@@ -1,38 +1,37 @@
-<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="index.css">
-    <title>Miami Travel Hub</title>
+    <title>Miami Hotel Compare</title>
 </head>
 <body>
     <header>
-        <div class="logo-container">
-            <img src="your_logo.png" alt="Miami Travel Hub Logo">
-        </div>
-        <div class="navbar-container">
-            <div class="menu-toggle" id="menu-toggle"></div>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#">Home</a></li>
-                <li>
-                    <a href="#">Search</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Flights</a></li>
-                        <li><a href="#">Hotels</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Sign Up</a></li>
-                <li><a href="#">Log In</a></li>
-            </ul>
-        </div>
+        <h1>Miami Hotel Compare</h1>
     </header>
 
-    <section class="main-content">
-        <!-- Main content area for displaying search results -->
-    </section>
+    <main>
+        <section class="search-section">
+            <h2>Find the Best Hotel Rates</h2>
+            <div class="search-form">
+                <input type="text" id="location" placeholder="Enter your destination...">
+                <input type="date" id="check-in" placeholder="Check-in date">
+                <input type="date" id="check-out" placeholder="Check-out date">
+                <input type="number" id="guests" placeholder="Number of guests">
+                <button onclick="searchHotels()">Search Hotels</button>
+            </div>
+        </section>
+
+        <section class="results-section">
+            <h2>Hotel Comparisons</h2>
+            <div class="comparison-results">
+                <!-- Display comparisons of hotel rates -->
+                <!-- Results will dynamically appear here -->
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2023 Miami Travel Hub</p>
+        <p>&copy; 2023 Miami Hotel Compare</p>
     </footer>
 
     <script src="index.js"></script>

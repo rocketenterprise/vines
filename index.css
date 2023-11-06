@@ -1,88 +1,81 @@
+/* Miami Vice color palette */
+:root {
+    --teal: #4AC4C2;
+    --pink: #FF6B6B;
+    --light-blue: #7E8AA2;
+    --light-purple: #A8A7B4;
+    --white: #FFFFFF;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #7E8AA2; /* Light Blue background */
-    color: #FFFFFF; /* White text */
+    background-color: var(--light-blue);
+    color: var(--white);
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #4AC4C2; /* Teal header background */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: var(--pink);
+    text-align: center;
+    padding: 15px 0;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+main {
     padding: 20px;
 }
 
-.logo-container img {
-    width: 150px; /* Adjust size as needed */
+.search-section, .results-section {
+    background-color: var(--teal);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
 }
 
-.navbar-container {
+h2 {
+    font-size: 24px;
+    color: var(--white);
+}
+
+.search-form {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
-.nav-menu {
-    list-style: none;
-    display: flex;
-}
-
-.nav-menu li {
-    position: relative;
-    margin-right: 20px;
-}
-
-.nav-menu li a {
-    text-decoration: none;
-    color: #FFFFFF; /* White menu text */
+input {
+    width: 48%;
     padding: 10px;
-    display: block;
-}
-
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: #4AC4C2; /* Teal dropdown background */
+    border: none;
     border-radius: 5px;
 }
 
-.dropdown-menu li {
-    margin: 10px;
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--pink);
+    color: var(--white);
+}
+
+button:hover {
+    background-color: var(--light-purple);
+}
+
+.comparison-results {
+    /* Style your comparison results */
 }
 
 footer {
     text-align: center;
-    background-color: #4AC4C2; /* Teal footer background */
+    background-color: var(--pink);
     padding: 10px;
-}
-
-/* Mobile menu styles */
-.menu-toggle {
-    display: none;
-    width: 30px;
-    height: 30px;
-    background-color: #FF6B6B; /* Pink menu toggle button */
-    cursor: pointer;
-}
-
-@media screen and (max-width: 768px) {
-    .nav-menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: #4AC4C2; /* Teal mobile menu background */
-        padding: 20px 0;
-        border-left: 1px solid #FFFFFF; /* White border */
-    }
-
-    .nav-menu.active {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
 }
