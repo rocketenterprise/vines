@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Hotel Compare</title>
 </head>
 <body>
@@ -12,61 +13,54 @@
                 <img src="logo.png" alt="Hotel Compare Logo">
             </div>
             <div class="menu-container">
-                <div class="menu-toggle"></div>
-                <nav>
-                    <ul class="nav-menu">
-                        <li><a href="#home" class="active">Home</a></li>
-                        <li class="dropdown">
-                            <a href="javascript:void(0)" class="dropbtn">Dropdown <i class="fa fa-caret-down"></i></a>
-                            <div class="dropdown-content">
-                                <a href="#item1">Item 1</a>
-                                <a href="#item2">Item 2</a>
-                                <a href="#item3">Item 3</a>
-                                <a href="#item4">Item 4</a>
-                                <a href="#item5">Item 5</a>
-                            </div>
-                        </li>
-                        <li><a href="#about">About</a></li>
-                    </ul>
+                <div class="menu-toggle" onclick="toggleMenu()"></div>
+                <nav class="nav-menu">
+                    <a href="#" class="active">Home</a>
+                    <a href="#">Hotels</a>
+                    <a href="#">Flights</a>
+                    <div class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">More</a>
+                        <div class="dropdown-content">
+                            <a href="#">Cars</a>
+                            <a href="#">Activities</a>
+                            <!-- Add more dropdown items -->
+                        </div>
+                    </div>
                 </nav>
             </div>
             <div class="user-container">
-                <a href="#login">Login</a>
-                <a href="#signup">Sign Up</a>
+                <div class="icon" id="google-icon"></div>
+                <div class="icon" id="yahoo-icon"></div>
             </div>
         </div>
-    </div>
 
-    <div class="container">
-        <section class="header-section">
-            <h1>Welcome to Hotel Compare</h1>
-        </section>
-        <section class="cards-container">
-            <!-- Cards with hotel information -->
-        </section>
-        <div class="scroll-arrow"></div>
-    </div>
+        <div class="content-container">
+            <header>
+                <h1>Find the Best Hotel Rates</h1>
+            </header>
 
-    <div class="container">
-        <footer>
-            <div class="footer-section">
-                <h2>Terms and Conditions</h2>
-                <ul>
-                    <li><a href="#terms1">Term 1</a></li>
-                    <li><a href="#terms2">Term 2</a></li>
-                </ul>
+            <div class="cards-container">
+                <!-- Cards with hotel information -->
+                <!-- Add your card elements here -->
             </div>
-            <div class="footer-section">
-                <h2>Cookie Policy</h2>
-                <ul>
-                    <li><a href="#cookie1">Cookie 1</a></li>
-                    <li><a href="#cookie2">Cookie 2</a></li>
-                </ul>
-            </div>
-        </footer>
-    </div>
 
-    <script src="index.js"></script>
+            <div class="scroll-arrow">
+                <div class="arrow"></div>
+            </div>
+        </div>
+
+        <div class="footer-container">
+            <section class="footer-section">
+                <h2>Terms & Conditions</h2>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Policy</a>
+                <!-- Add more footer links -->
+            </section>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
+
 
