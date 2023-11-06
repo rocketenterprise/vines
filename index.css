@@ -33,18 +33,32 @@ nav {
     font-weight: 700;
 }
 
-.nav-links {
+.nav-menu {
     list-style: none;
     display: flex;
 }
 
-.nav-links li {
+.nav-menu li {
+    position: relative;
     margin-right: 20px;
 }
 
-.nav-links a {
+.nav-menu li a {
     text-decoration: none;
-    color: #fff;
+    color: #FFFFFF; /* White menu text */
+    padding: 10px;
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #4AC4C2; /* Teal dropdown background */
+    border-radius: 5px;
+}
+
+.dropdown-menu li {
+    margin: 10px;
 }
 
 /* Main content styles */
