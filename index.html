@@ -3,70 +3,37 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="index.css">
-    <title>Hotel Compare</title>
+    <title>Miami Hotel Compare</title>
 </head>
 <body>
-    <div class="container">
-        <div class="navbar">
-            <div class="logo-container">
-                <img src="logo.png" alt="Hotel Compare Logo">
-            </div>
-            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
-            <div class="menu-container">
-                <nav>
-                    <ul class="nav-menu">
-                        <li><a href="#home" class="active">Home</a></li>
-                        <li><a href="#hotels">Hotels</a></li>
-                        <li class="dropdown">
-                            <a href="javascript:void(0)" class="dropbtn">More <i class="fa fa-caret-down"></i></a>
-                            <div class="dropdown-content">
-                                <a href="#flights">Flights</a>
-                                <a href="#cars">Car Rentals</a>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="user-container">
-                <a href="#login">Login</a>
-                <a href="#signup">Sign Up</a>
-            </div>
-        </div>
-    </div>
-    
-    <div class="container">
-        <section>
-            <h2>Hotel Compare</h2>
-        </section>
-        
-        <div class="cards-container">
-            <!-- Hotel cards go here -->
-        </div>
-        
-        <div class="scroll-arrow">
-            <a href="#scroll-down">&#9660;</a>
-        </div>
-    </div>
+    <header>
+        <h1>Miami Hotel Compare</h1>
+    </header>
 
-    <div class="container">
-        <footer>
-            <section>
-                <h3>Legal</h3>
-                <ul>
-                    <li><a href="#terms">Terms & Conditions</a></li>
-                    <li><a href="#privacy">Privacy Policy</a></li>
-                    <li><a href="#cookie">Cookie Policy</a></li>
-                </ul>
-            </section>
-            <section>
-                <h3>Support</h3>
-                <ul>
-                    <li><a href="#contact">Contact Us</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                </ul>
-            </section>
-        </footer>
-    </div>
+    <main>
+        <section class="search-section">
+            <h2>Find the Best Hotel Rates</h2>
+            <div class="search-form">
+                <input type="text" id="location" placeholder="Enter your destination...">
+                <input type="date" id="check-in" placeholder="Check-in date">
+                <input type="date" id="check-out" placeholder="Check-out date">
+                <input type="number" id="guests" placeholder="Number of guests">
+                <button onclick="searchHotels()">Search Hotels</button>
+            </div>
+        </section>
+
+        <section class="results-section">
+            <h2>Hotel Comparisons</h2>
+            <div class="comparison-results">
+                <!-- Display comparisons of hotel rates -->
+                <!-- Results will dynamically appear here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Miami Hotel Compare</p>
+    </footer>
 
     <script src="index.js"></script>
 </body>
