@@ -1,49 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <title>Hotel Compare</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Miami Hotel Compare</title>
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="logo.png" alt="Hotel Compare Logo">
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#hotels">Hotels</a></li>
-                    <li><a href="#flights">Flights</a></li>
-                    <li><a href="#cars">Car Rentals</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
-            </div>
-        </nav>
+        <h1>Miami Hotel Compare</h1>
     </header>
 
     <main>
         <section class="search-section">
-            <h1>Find the Best Hotel Rates</h1>
+            <h2>Find the Best Hotel Rates</h2>
             <div class="search-form">
-                <!-- Hotel search form can be added here -->
+                <input type="text" id="location" placeholder="Destination">
+                <input type="date" id="check-in" placeholder="Check-in">
+                <input type="date" id="check-out" placeholder="Check-out">
+                <input type="number" id="guests" placeholder="Guests">
+                <button id="search-button">Search</button>
             </div>
         </section>
 
         <section class="results-section">
             <h2>Hotel Results</h2>
             <div class="hotel-results">
-                <!-- Hotel results and comparisons can be added here -->
+                <!-- Display hotel results and rate comparisons -->
+                <!-- Results will dynamically appear here -->
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <p>&copy; 2023 Hotel Compare</p>
-        </div>
+        <p>&copy; 2023 Miami Hotel Compare</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

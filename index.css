@@ -1,100 +1,77 @@
 :root {
-    --primary-color: #02b7dd;
-    --secondary-color: #443a84;
-    --white: #ffffff;
-    --accent-color: #e97db1;
-    --black: #000000;
+    --primary-color: #443a84;
+    --secondary-color: #000000;
+   
 }
 
 body {
     font-family: Arial, sans-serif;
+    background-color: var(--light-blue);
+    color: var(--white);
     margin: 0;
     padding: 0;
 }
 
-/* Header and Navbar Styles */
 header {
-    background-color: var(--primary-color);
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-.logo img {
-    max-width: 150px;
-}
-
-.menu ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.menu ul li a {
-    text-decoration: none;
-    color: var(--white);
-    font-weight: bold;
-    font-size: 16px;
-}
-
-/* Search Section Styles */
-.search-section {
-    background-color: var(--secondary-color);
-    color: var(--white);
-    padding: 20px;
+    background-color: var(--pink);
     text-align: center;
+    padding: 15px 0;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+main {
+    padding: 20px;
+}
+
+.search-section, .results-section {
+    background-color: var(--teal);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: var(--white);
 }
 
 .search-form {
-    max-width: 400px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
 }
 
-.search-form input[type="text"],
-.search-form input[type="date"],
-.search-form input[type="number"] {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-}
-
-.search-form button {
-    width: 100%;
+input {
+    width: 24%;
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: var(--accent-color);
-    color: var(--white);
+    margin-bottom: 10px;
+}
+
+#search-button {
+    width: 24%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    background-color: var(--pink);
+    color: var(--white);
 }
 
-.search-form button:hover {
-    background-color: var(--primary-color);
-}
-
-/* Results Section Styles */
-.results-section {
-    padding: 20px;
+#search-button:hover {
+    background-color: var(--light-purple);
 }
 
 .hotel-results {
-    /* Style hotel results and comparisons */
+    /* Style your hotel results */
 }
 
-/* Footer Styles */
 footer {
-    background-color: var(--secondary-color);
     text-align: center;
+    background-color: var(--pink);
     padding: 10px;
-    color: var(--white);
-}
-
-.footer-content p {
-    margin: 0;
 }
