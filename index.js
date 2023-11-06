@@ -1,11 +1,8 @@
-$(document).ready(function() {
-    $('.menu-toggle').click(function() {
-        $('.nav-menu').slideToggle(300);
-    });
+document.addEventListener("DOMContentLoaded", function() {
+    const menuToggle = document.getElementById("menu-toggle");
+    const navMenu = document.getElementById("nav-menu");
 
-    $(window).resize(function() {
-        if ($(window).width() > 768) {
-            $('.nav-menu').removeAttr('style');
-        }
+    menuToggle.addEventListener("click", function() {
+        navMenu.classList.toggle("active");
     });
 });

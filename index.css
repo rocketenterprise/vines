@@ -1,28 +1,24 @@
-/* Reset default styles */
-body, ul {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: Arial, sans-serif;
     background-color: #7E8AA2; /* Light Blue background */
     color: #FFFFFF; /* White text */
+    margin: 0;
+    padding: 0;
 }
 
 header {
     background-color: #4AC4C2; /* Teal header background */
-    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
 }
 
-.logo img {
+.logo-container img {
     width: 150px; /* Adjust size as needed */
 }
 
-nav {
+.navbar-container {
     display: flex;
     align-items: center;
 }
@@ -76,15 +72,14 @@ footer {
         flex-direction: column;
         position: absolute;
         top: 60px;
-        left: 0;
-        width: 100%;
+        right: 0;
         background-color: #4AC4C2; /* Teal mobile menu background */
         padding: 20px 0;
-        border-bottom: 1px solid #FFFFFF; /* White border */
+        border-left: 1px solid #FFFFFF; /* White border */
     }
 
-    .nav-menu li {
-        margin: 10px 0;
+    .nav-menu.active {
+        display: flex;
     }
 
     .menu-toggle {
