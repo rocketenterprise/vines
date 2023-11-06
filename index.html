@@ -1,39 +1,72 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="index.css">
-    <title>Miami Hotel Compare</title>
+    <title>Hotel Compare</title>
 </head>
 <body>
-    <header>
-        <h1>Miami Hotel Compare</h1>
-    </header>
-
-    <main>
-        <section class="search-section">
-            <h2>Find the Best Hotel Rates</h2>
-            <div class="search-form">
-                <input type="text" id="location" placeholder="Enter your destination...">
-                <input type="date" id="check-in" placeholder="Check-in date">
-                <input type="date" id="check-out" placeholder="Check-out date">
-                <input type="number" id="guests" placeholder="Number of guests">
-                <button onclick="searchHotels()">Search Hotels</button>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo-container">
+                <img src="logo.png" alt="Hotel Compare Logo">
             </div>
-        </section>
-
-        <section class="results-section">
-            <h2>Hotel Comparisons</h2>
-            <div class="comparison-results">
-                <!-- Display comparisons of hotel rates -->
-                <!-- Results will dynamically appear here -->
+            <div class="menu-container">
+                <div class="menu-toggle"></div>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">Dropdown <i class="fa fa-caret-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="#item1">Item 1</a>
+                                <a href="#item2">Item 2</a>
+                                <a href="#item3">Item 3</a>
+                                <a href="#item4">Item 4</a>
+                                <a href="#item5">Item 5</a>
+                            </div>
+                        </li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </nav>
             </div>
-        </section>
-    </main>
+            <div class="user-container">
+                <a href="#login">Login</a>
+                <a href="#signup">Sign Up</a>
+            </div>
+        </div>
+    </div>
 
-    <footer>
-        <p>&copy; 2023 Miami Hotel Compare</p>
-    </footer>
+    <div class="container">
+        <section class="header-section">
+            <h1>Welcome to Hotel Compare</h1>
+        </section>
+        <section class="cards-container">
+            <!-- Cards with hotel information -->
+        </section>
+        <div class="scroll-arrow"></div>
+    </div>
+
+    <div class="container">
+        <footer>
+            <div class="footer-section">
+                <h2>Terms and Conditions</h2>
+                <ul>
+                    <li><a href="#terms1">Term 1</a></li>
+                    <li><a href="#terms2">Term 2</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>Cookie Policy</h2>
+                <ul>
+                    <li><a href="#cookie1">Cookie 1</a></li>
+                    <li><a href="#cookie2">Cookie 2</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
 
     <script src="index.js"></script>
 </body>
 </html>
+
