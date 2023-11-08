@@ -6,19 +6,22 @@
 }
 
 /* Basic styling for the entire page */
-body {
+.page {
     font-family: Arial, sans-serif;
     background-color: rgb(24, 28, 49);
 }
+.page__inner{
+    background-color:  rgb(24, 37, 68); 
+
+}
 
 /* Header styles */
-header {
-    background-color: rgb(24, 28, 49);
+.header.page__header {
     color: #000000;
     padding: 10px 0;
 }
 
-nav {
+.nav.page__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,7 +31,7 @@ nav {
     background-color: rgb(24, 37, 68)
 }
 
-.logo a {
+.nav.page__nav_logo a {
     color: rgb(226, 226, 226);
     text-decoration: none;
     font-size: 24px;
