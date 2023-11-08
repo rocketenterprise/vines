@@ -8,10 +8,10 @@
 /* Basic styling for the entire page */
 .page {
     font-family: Arial, sans-serif;
-    background-color: rgb(24, 28, 49);
+    background-color: rgb(24, 26, 32);
 }
 .page__inner{
-    background-color:  rgb(24, 37, 68); 
+    background-color:  rgb(255, 255, 255); 
 
 }
 
@@ -28,7 +28,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    background-color: rgb(24, 37, 68)
+    background-color: rgb(173, 127, 0)
 }
 
 .nav.page__nav_logo a {
