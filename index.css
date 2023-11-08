@@ -8,10 +8,10 @@
 /* Basic styling for the entire page */
 .page {
     font-family: Arial, sans-serif;
-    background-color: rgb(24, 26, 32);
+    background-color: rgb(255, 255, 255);
 }
 .page__inner{
-    background-color:  rgb(255, 255, 255); 
+    background-color:  rgb(18, 23, 48); 
 
 }
 
