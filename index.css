@@ -21,7 +21,7 @@
     padding: 10px 0;
 }
 
-.nav.page__nav {
+.navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,7 +31,7 @@
     background-color: rgb(173, 127, 0)
 }
 
-.nav.page__nav_logo a {
+.navbar_logo a {
     color: rgb(226, 226, 226);
     text-decoration: none;
     font-size: 24px;
