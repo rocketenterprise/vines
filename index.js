@@ -6,3 +6,12 @@ document.getElementById('search-button').addEventListener('click', function() {
 
     // Implement hotel search logic and display results in .hotel-results
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const navbarToggler = document.querySelector('.navbar_toggler');
+    const navLinks = document.querySelector('.nav-links');
+
+    navbarToggler.addEventListener('click', function () {
+        navLinks.classList.toggle('show');
+    });
+});
